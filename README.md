@@ -1,38 +1,17 @@
 
-# Ansible Automation – Control Node Setup
+# AnsibleProjects – Infrastructure Automation Repository
 
-This repository demonstrates the setup of an Ansible control node and managed nodes on AWS EC2, focusing on reliable installation, system preparation, and verification of configuration management tooling.
+This repository contains multiple real-world projects demonstrating **infrastructure automation using Ansible**. Each project is designed to showcase **hands-on configuration management, server provisioning, and automation skills** for Linux environments, cloud platforms, and enterprise infrastructure.
 
-The project reflects real-world infrastructure setup practices, including OS-level dependency management and secure remote connectivity.
+The repository is structured to reflect **best practices** in organization, version control, and documentation.
 
 ---
 
 ## 🔧 Environment
-- Cloud Provider: AWS EC2
-- OS: Ubuntu Linux
-- Access Method: SSH (MobaXterm)
-- Automation Tool: Ansible
 
----
+- **Cloud Platforms:** AWS EC2, or any Linux-based servers  
+- **Operating System:** Ubuntu, CentOS, or other Linux distributions  
+- **Access Method:** SSH / key-based authentication  
+- **Automation Tool:** Ansible (including playbooks, roles, and inventories)  
+- **Python Version:** System-managed Python 3.x or virtual environments  
 
-## 📌 Implementation Overview
-
-### 1. Infrastructure Preparation
-- Provisioned separate EC2 instances for:
-  - Ansible Control Node
-  - Managed Nodes
-- Established secure SSH connectivity using key-based authentication
-
-### 2. System Preparation
-- Updated OS package repositories to ensure access to latest stable packages
-- Installed Python package management tools required for automation
-
-### 3. Ansible Installation
-- Installed Ansible using the native OS package manager for stability and compatibility
-- Verified Ansible installation and version
-
----
-
-## ✅ Validation
-```bash
-ansible --version
